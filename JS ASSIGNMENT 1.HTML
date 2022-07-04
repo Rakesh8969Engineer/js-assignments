@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Title of the document-->
+    <title>Introduction of JS</title>
+</head>
+<style>
+    body{
+
+background-color: pink;
+
+    }
+</style>
+<body>
+    <!--Pragraphs with ID's-->
+    <p id="intro">Introduction to JavaScript<br> <br>
+        
+        Hello Everyone welcome to the world of JavaScript today we all are going to learn JavaScript from basic.We know that JavaScript is scripting and programming language that is mostly used in web development.Without js we can't think and imagine about web development.
+    </p>
+    <p id="para1"></p>
+
+
+
+
+    <button id="btn">click me</button>
+    <!--Included with the link of external scriptfile-->
+    <script>
+
+  
+
+// access the html elements by id and doing some modification in it.
+
+document.getElementById("para1").innerHTML = "Hello JavaScript";
+
+// access the html element(button)by id and doing some modification in it(when button is clicked doing something useful and interactive).{using onclick function}
+
+
+
+
+    document.getElementById("btn").onclick =function(){
+        document.getElementById("intro").innerHTML ="Text changed by clicking function all the whole text of that previous paragraph is changed.if you want to see previous records then refresh this page";
+    }
+
+//changing body background color:
+
+    document.body.style.backgroundColor  = "lightgreen";
+
+
+
+
+    
+    </script>
+</body>
+
+</html>
